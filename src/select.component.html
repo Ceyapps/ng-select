@@ -16,6 +16,7 @@
             *ngIf="optionList.hasSelected">
             <ng-template [ngOutletContext]="{option: optionList.selection[0], onDeselectOptionClick: onDeselectOptionClick}" [ngTemplateOutlet]="optionTemplate"></ng-template>
             <span *ngIf="!optionTemplate">{{optionList.selection[0].label}}</span>
+            <img *ngIf="!optionTemplate" [src]="'assets/images/branding/dropdown/'+optionList.selection[0].label +'.png'">
         </div>
         <div class="placeholder"
             *ngIf="!optionList.hasSelected">

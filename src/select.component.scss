@@ -49,6 +49,11 @@ ng-select {
                 overflow: hidden;
                 padding: 0 10px;
                 white-space: nowrap;
+
+                img{
+                    max-height: 20px;
+                    float: right;
+                }
             }
 
             >div.placeholder {

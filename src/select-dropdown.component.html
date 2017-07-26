@@ -25,6 +25,8 @@
                 (mouseover)="onOptionMouseover(option)">
                 <ng-template [ngOutletContext]="{option: option.wrappedOption}" [ngTemplateOutlet]="optionTemplate"></ng-template>
                 <span *ngIf="!optionTemplate">{{option.label}}</span>
+
+                <img [src]="'assets/images/branding/dropdown/'+option.label +'.png'">
             </li>
             <li
                 *ngIf="!optionList.hasShown"

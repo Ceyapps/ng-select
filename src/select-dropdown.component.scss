@@ -40,6 +40,12 @@ select-dropdown {
                     padding: 4px 8px;
                     cursor: pointer;
                     user-select: none;
+                    min-height: 40px;
+
+                    img{
+                        float: right;
+                        height: 30px;
+                    }
                 }
             }
         }
