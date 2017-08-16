@@ -25,4 +25,8 @@ export class Option {
     get label(): string {
         return this.wrappedOption.label;
     }
+
+    get image(): string {
+        return this.wrappedOption.image;
+    }
 }

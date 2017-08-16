@@ -8,4 +8,5 @@ export declare class Option {
     constructor(option: IOption);
     readonly value: string;
     readonly label: string;
+    readonly image: string;
 }

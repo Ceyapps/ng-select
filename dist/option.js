@@ -22,6 +22,13 @@ var Option = (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(Option.prototype, "image", {
+        get: function () {
+            return this.wrappedOption.image;
+        },
+        enumerable: true,
+        configurable: true
+    });
     return Option;
 }());
 exports.Option = Option;
